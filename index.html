@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!---Style Sheet-->
+
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!--Font Awesome-->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous" />
+
+        <title>Hangman</title>
+    </head>
+    <body>
+        <h1>Hangman</h1>
+        <p>
+            Figure out the hidden word! <br />
+            Input a Letter
+        </p>
+        <div class="game-container">
+            <!-- Rod -->
+            <svg height="250" width="200" class="figure-container">
+                <line x1="60" y1="20" x2="140" y2="20" />
+                <line x1="140" y1="20" x2="140" y2="50" />
+                <line x1="60" y1="20" x2="60" y2="230" />
+                <line x1="20" y1="230" x2="100" y2="230" />
+                <!-- Head -->
+                <circle cx="140" cy="70" r="20" />
+                <!-- Eyes -->
+                <circle cx="130" cy="65" r="1" />
+                <circle cx="150" cy="65" r="1" />
+                <!-- Mouth -->
+                <line x1="145" y1="80" x2="135" y2="80" />
+                <!-- Body -->
+                <line x1="140" y1="90" x2="140" y2="170" />
+                <!-- L Arm-->
+                <line x1="140" y1="120" x2="100" y2="90" />
+                <!-- R Arm -->
+                <line x1="140" y1="120" x2="170" y2="90" />
+                <!-- L Leg -->
+                <line x1="140" y1="170" x2="170" y2="200" />
+                <!-- R Arm -->
+                <line x1="140" y1="170" x2="90" y2="170" />
+            </svg>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
