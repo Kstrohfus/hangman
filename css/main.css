@@ -8,7 +8,7 @@ body {
 
 .figure-container {
     fill: transparent;
-    stroke: #fff;
+    stroke: rgb(255, 255, 255);
     stroke-width: 4px;
     stroke-linecap: round;
 }
